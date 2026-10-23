@@ -9,7 +9,6 @@ public class Tugas1_jobsheet7_18 {
         
         System.out.print("Masukkan jumlah pembeli : ");
         pembeli = sc.nextInt();
-        System.out.println(hargaTiket);
         for (int org = 0; org < pembeli ; org++) {
             System.out.print("Masukkan jumlah tiket pembeli ke - " +(org + 1) + " : ");
             jumlahTiket = sc.nextInt();
@@ -18,19 +17,18 @@ public class Tugas1_jobsheet7_18 {
                 diskon = 0.15;
                 totalHarga = hargaTiket * jumlahTiket;
                 totalBayar = totalHarga - (totalHarga*diskon);
-                System.out.println(totalBayar);
+                System.out.println("Harga yang dibayar : " + totalBayar);
             } else if (jumlahTiket > (3+(18%3))){
                 //(8+(18%5))/100
-                diskon = 0.11; 
-                System.out.println(diskon);
+                diskon = 0.11;
                 totalHarga = hargaTiket * jumlahTiket;
                 totalBayar = totalHarga - (totalHarga*diskon);
-                System.out.println(totalBayar);
+                System.out.println("Harga yang dibayar : " + totalBayar);
             } else if (jumlahTiket <= 4 && jumlahTiket >= 0){
                 diskon = 0;
                 totalHarga = hargaTiket * jumlahTiket;
                 totalBayar = totalHarga - (totalHarga*diskon);
-                System.out.println(totalBayar);
+                System.out.println("Harga yang dibayar : " + totalBayar);
             } else {
                 System.out.println("Tidak valid, isi lagi");
                 continue;

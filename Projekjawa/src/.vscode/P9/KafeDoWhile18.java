@@ -9,7 +9,7 @@ public class KafeDoWhile18 {
         double totalHarga;
 
         do {
-            System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk keluar : ");
+            System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk keluar)   : ");
             namaPelanggan = sc.nextLine();
             if (namaPelanggan.equalsIgnoreCase("batal")) {
                 System.out.println("Transaksi dibatalkan");
