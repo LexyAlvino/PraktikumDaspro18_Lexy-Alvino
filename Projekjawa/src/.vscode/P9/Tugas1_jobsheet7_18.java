@@ -31,6 +31,7 @@ public class Tugas1_jobsheet7_18 {
                 System.out.println("Harga yang dibayar : " + totalBayar);
             } else {
                 System.out.println("Tidak valid, isi lagi");
+                org--;
                 continue;
             }
             totalTiket += jumlahTiket;
