@@ -1,3 +1,6 @@
+//n = (3 + (18 mod 5)) = 6 
+//n = (9 + (18 mod 5)) = 12
+
 import java.util.Scanner;
 
 public class Star18 {
