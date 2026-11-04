@@ -1,4 +1,4 @@
-//n = (2 + (18 % 3)) = 2 
+//n = (5 + (18 % 4)) = 7 
 
 import java.util.Scanner;
 
