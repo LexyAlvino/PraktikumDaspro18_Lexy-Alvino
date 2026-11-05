@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Triangle18_modifikasi {
+public class Triangle18_step8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
