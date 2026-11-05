@@ -1,3 +1,5 @@
+//n = (6 + (18 mod 5)) = 9
+
 import java.util.Scanner;
 
 public class NilaiKelompok18 {
