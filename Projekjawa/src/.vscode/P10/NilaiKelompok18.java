@@ -1,6 +1,3 @@
-// jumlahKelompok = (2 + (18 mod 3)) = 2 
-// jumlahPenilai = (3 + (18 mod 2)) = 3
-
 import java.util.Scanner;
 
 public class NilaiKelompok18 {
@@ -25,15 +22,14 @@ public class NilaiKelompok18 {
                 for (int i = 1; i <= jumlahPenilai; i++) {
                     int nilai;
                     do {
-                        System.out.println("Nilai dari penilai " + i + " : ");
+                        System.out.print("Nilai dari penilai " + i + " : ");
                         nilai = sc.nextInt();
                         if (nilai <0 || nilai > 100) {
                             System.out.println("nilai harus 0-100, ulangi");
                         }
-                    } while (totalNilai <= nilai);
-                        totalNilai += nilai;
+                    } while (nilai < 0 || nilai > 100);
+                        totalNilai += nilai;                      
                 }
-                nomorKelompok++;
                 double rataNilai = totalNilai / jumlahPenilai;
                 System.out.println("Kelompok " + nomorKelompok + " : nilai rata-rata = " + rataNilai);
 
@@ -41,14 +37,12 @@ public class NilaiKelompok18 {
                     rataTertinggi = rataNilai;
                     kelompokTerbaik = nomorKelompok;
             }
-                
+             nomorKelompok++;    
             }
             System.out.println("==========================");
             System.out.println("Kelompok terbaik : " + kelompokTerbaik);
             System.out.println("Rata-rata tertinggi : " + rataTertinggi);
         }
-            
-
-            sc.close();
+    sc.close();
     }
 }
