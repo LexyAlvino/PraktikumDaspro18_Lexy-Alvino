@@ -1,4 +1,5 @@
-//n = (6 + (18 mod 5)) = 9
+//jumlahKelompok = (2 + (18 mod 3))=2
+//jumlahPenilai = (3 + (18 mod 2))=3
 
 import java.util.Scanner;
 
