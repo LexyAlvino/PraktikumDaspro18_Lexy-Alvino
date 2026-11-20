@@ -1,3 +1,6 @@
+// A. key=68
+// B. B=38
+
 import java.util.Arrays;
 import java.util.Scanner;
 
