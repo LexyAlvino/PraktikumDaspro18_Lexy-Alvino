@@ -1,9 +1,21 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class SorthNilai18 {
     public static void main(String[] args) {
-        int[] nilai = {78, 65, 90, 55, 88, 72};
-        int key = 90;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan banyaknya nilai yang ingin diinput : " );
+        int banyak = sc.nextInt();
+        int[] nilai = new int[banyak];
+
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print("Masukkan nilai baris ke-" + (i+1) + " : ");
+            nilai[i] = sc.nextInt();
+        }
+
+        System.out.print("Masukkan nilai yang ingin dicari : ");
+        int key = sc.nextInt();
         boolean ditemukan = false;
 
         for (int i = 0; i < nilai.length; i++) {
