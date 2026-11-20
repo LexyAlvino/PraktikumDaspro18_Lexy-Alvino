@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class ArrayBilangan18 {
     public static void main(String[] args) {
        
-        int[] bil = {18, 26, -5, 23};
+        int[] bil = {18, 26, -5, 23 };
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil [" + i +"] = " + bil[i]);
