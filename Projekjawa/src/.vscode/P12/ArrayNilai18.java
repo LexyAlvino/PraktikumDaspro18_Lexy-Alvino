@@ -11,9 +11,10 @@ public class ArrayNilai18 {
             nilaiAkhir[i] = sc.nextInt();
         }
         for (int i = 0; i < nilaiAkhir.length; i++) {
-        String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-        System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
-        }   
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" +(i+1) + " : " + nilaiAkhir[i] + "  Lulus");
+            }
+        }  
     sc.close();
     }
 }
