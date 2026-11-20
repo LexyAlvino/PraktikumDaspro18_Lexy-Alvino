@@ -1,3 +1,5 @@
+//30 + (18 mod 71)=83
+
 import java.util.Scanner;
 
 public class ArrayRataNilai18 {
@@ -41,5 +43,7 @@ public class ArrayRataNilai18 {
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
         System.out.println("Predikat kelas : " + pesan);
+
+        sc.close();
     }
 }
