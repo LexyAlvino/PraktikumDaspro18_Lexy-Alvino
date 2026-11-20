@@ -27,7 +27,8 @@ public class SorthNilai18 {
         }
 
         if (!ditemukan) {
-        System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Nilai yang dicari tidak ditemukan.");
+            System.out.println("Nilai " + key + " tidak ada di antara " + nilai.length  + " data: " + Arrays.toString(nilai));
         }
 
         for (int i = 0; i < nilai.length - 1; i++) {
