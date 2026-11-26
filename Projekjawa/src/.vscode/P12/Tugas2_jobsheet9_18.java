@@ -1,6 +1,6 @@
 // 2 + (P mod 4)=4
 // 18 mod 7=4
-
+    
 import java.util.Scanner;
 
 public class Tugas2_jobsheet9_18 {
