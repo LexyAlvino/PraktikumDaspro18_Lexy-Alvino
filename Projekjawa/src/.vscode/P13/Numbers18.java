@@ -14,5 +14,9 @@ public class Numbers18 {
         for (int i = 0; i < myNumbers.length; i++) {
             System.out.println("Panjang baris ke-" + (i + 1) + ": " + myNumbers[i].length);
         }
+        System.out.println("\nSebelum: myNumbers[0].length = " + myNumbers[0].length);
+        myNumbers[0] = new int[7];
+        System.out.println("myNumbers.length    = " + myNumbers.length);
+        System.out.println("myNumbers[0].length = " + myNumbers[0].length);
     }
 }
