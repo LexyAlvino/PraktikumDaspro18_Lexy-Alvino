@@ -30,12 +30,14 @@ public class BioskopWithScanner18 {
                     if ((baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length)) {
                         System.out.println("Tidak valid, ulangi lagi!");
                         continue;
+                    } else if (penonton[baris - 1][kolom - 1] != null) {
+                        System.out.println("Kursi sudah terisi oleh " + penonton[baris - 1][kolom - 1] + ". Pilih kursi lain!");
                     } else {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data berhasil disimpan.");
+                        break;
                     }
                     break;
-            
                 case 2 :
                     for (int i = 0; i < penonton.length; i++) {
                         System.out.println("Baris ke-" + (i + 1) + ": "+ String.join(", ", penonton[i]));
