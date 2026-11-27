@@ -20,13 +20,20 @@ public class BioskopWithScanner18 {
                 case 1:
                     System.out.print("Masukkan nama: ");
                     nama = sc.nextLine();
+                    sc.nextLine();
                     System.out.print("Masukkan baris: ");
                     baris = sc.nextInt();
                     System.out.print("Masukkan kolom: ");
                     kolom = sc.nextInt();
                     sc.nextLine();
-
-                    penonton[baris - 1][kolom - 1] = nama;
+                    
+                    if ((baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length)) {
+                        System.out.println("Tidak valid, ulangi lagi!");
+                        continue;
+                    } else {
+                        penonton[baris - 1][kolom - 1] = nama;
+                        System.out.println("Data berhasil disimpan.");
+                    }
                     break;
             
                 case 2 :
