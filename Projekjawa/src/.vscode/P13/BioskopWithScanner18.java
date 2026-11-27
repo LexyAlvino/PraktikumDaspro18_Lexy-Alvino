@@ -40,8 +40,19 @@ public class BioskopWithScanner18 {
                     break;
                 case 2 :
                     for (int i = 0; i < penonton.length; i++) {
-                        System.out.println("Baris ke-" + (i + 1) + ": "+ String.join(", ", penonton[i]));
+                        System.out.print("Baris ke-" + (i + 1) + ": ");
+                        for (int j = 0; j < penonton[i].length; j++) {
+                            if (penonton[i][j] == null) {
+                                System.out.print("***");
+                            } else {
+                                System.out.print(penonton[i][j]);
+                            }
+                            if (j < penonton[i].length - 1) {
+                                System.out.print(", ");
+                            }
                     }
+                    System.out.println();
+                }
                     break;
                 case 3 : 
                     System.out.println("Porgram selesai");
