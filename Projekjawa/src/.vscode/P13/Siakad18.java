@@ -3,8 +3,13 @@ import java.util.Scanner;
 public class Siakad18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int[][] nilai = new int[4][3];
+        
+        System.out.print("Jumlah mahasiswa: ");
+        int jmlMhs = sc.nextInt();
+        System.out.print("Jumlah mata kuliah: ");
+        int jmlMatkul = sc.nextInt();
+        
+        int[][] nilai = new int[jmlMhs][jmlMatkul];
 
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("Input nilai mahasiswa ke-" + (i + 1));
